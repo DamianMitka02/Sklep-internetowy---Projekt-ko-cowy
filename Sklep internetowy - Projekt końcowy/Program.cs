@@ -1,3 +1,5 @@
+using Sklep_internetowy___Projekt_końcowy.Models;
+using Microsoft.EntityFrameworkCore;
 namespace Sklep_internetowy___Projekt_końcowy
 {
     public class Program
@@ -6,8 +8,11 @@ namespace Sklep_internetowy___Projekt_końcowy
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<ProduktyDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
 
             var app = builder.Build();
 
@@ -28,9 +33,11 @@ namespace Sklep_internetowy___Projekt_końcowy
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Produkts}/{action=Index}/{id?}");
 
             app.Run();
         }
+
     }
+
 }
