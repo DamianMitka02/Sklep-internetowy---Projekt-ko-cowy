@@ -1,14 +1,14 @@
 Zainstaluj Pakiety :
-Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter, 
-Microsoft.AspNetCore.Identity.EntityFrameworkCore, 
-Microsoft.AspNetCore.Identity.UI, 
-Microsoft.EntityFrameworkCore, 
-Microsoft.EntityFrameworkCore.Design, 
-Microsoft.EntityFrameworkCore.Relational, 
-Microsoft.EntityFrameworkCore.Sqlite, 
-Microsoft.EntityFrameworkCore.SqlServer, 
-Microsoft.EntityFrameworkCore.Tools, 
-Microsoft.VisualStudio.Web.CodeGeneration.Design, 
+- Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter, 
+- Microsoft.AspNetCore.Identity.EntityFrameworkCore, 
+- Microsoft.AspNetCore.Identity.UI, 
+- Microsoft.EntityFrameworkCore, 
+- Microsoft.EntityFrameworkCore.Design, 
+- Microsoft.EntityFrameworkCore.Relational, 
+- Microsoft.EntityFrameworkCore.Sqlite, 
+- Microsoft.EntityFrameworkCore.SqlServer, 
+- Microsoft.EntityFrameworkCore.Tools, 
+- Microsoft.VisualStudio.Web.CodeGeneration.Design, 
 
 
 Przed uruchomieniem projektu ustaw połączenie z bazą danych w pliku "appsettings.json" oraz utwórz bazę danych o nazwie "SklepInternetowy".
@@ -19,8 +19,8 @@ Po stworzeniu bazy danych wpisz następujące komendy w konsoli menedżera pakie
 Admin, użytkownik testowy oraz odpowiadające im role zostaną automatycznie utworzone po uruchomieniu projektu.
 
 Dane logowania:
-Admin: email:"admin@admin.com", hasło:"123Asd!"
-Użytkownik testowy: email:"test@test.com", hasło:"Asd123!"
+- Admin: email:"admin@admin.com", hasło:"123Asd!"
+- Użytkownik testowy: email:"test@test.com", hasło:"Asd123!"
 
 
 Niezarejestrowany użytkownik może przeglądać produkty oraz sprawdzać ich detale.
