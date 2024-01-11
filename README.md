@@ -1,14 +1,14 @@
 Zainstaluj Pakiety :
-Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter
-Microsoft.AspNetCore.Identity.EntityFrameworkCore
-Microsoft.AspNetCore.Identity.UI
-Microsoft.EntityFrameworkCore
-Microsoft.EntityFrameworkCore.Design
-Microsoft.EntityFrameworkCore.Relational
-Microsoft.EntityFrameworkCore.Sqlite
-Microsoft.EntityFrameworkCore.SqlServer
-Microsoft.EntityFrameworkCore.Tools
-Microsoft.VisualStudio.Web.CodeGeneration.Design
+Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter, 
+Microsoft.AspNetCore.Identity.EntityFrameworkCore, 
+Microsoft.AspNetCore.Identity.UI, 
+Microsoft.EntityFrameworkCore, 
+Microsoft.EntityFrameworkCore.Design, 
+Microsoft.EntityFrameworkCore.Relational, 
+Microsoft.EntityFrameworkCore.Sqlite, 
+Microsoft.EntityFrameworkCore.SqlServer, 
+Microsoft.EntityFrameworkCore.Tools, 
+Microsoft.VisualStudio.Web.CodeGeneration.Design, 
 
 
 Przed uruchomieniem projektu ustaw połączenie z bazą danych w pliku "appsettings.json" oraz utwórz bazę danych o nazwie "SklepInternetowy".
