@@ -154,6 +154,8 @@ namespace Sklep_internetowy___Projekt_końcowy.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles ="Admin, Member")]
+
         public async Task<IActionResult> Buy(int? id)
         {
             if (id == null)
