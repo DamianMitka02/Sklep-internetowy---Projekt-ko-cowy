@@ -4,13 +4,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Sklep_internetowy___Projekt_końcowy.Areas.Identity.Data;
 using Sklep_internetowy___Projekt_końcowy.Models;
 
 #nullable disable
 
 namespace Sklep_internetowy___Projekt_końcowy.Migrations
 {
-    [DbContext(typeof(ProduktyDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20240110121427_Initial Create")]
     partial class InitialCreate
     {

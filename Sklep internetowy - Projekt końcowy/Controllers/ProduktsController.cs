@@ -2,19 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Produkty.Models;
-using Sklep_internetowy___Projekt_końcowy.Models;
+using Sklep_internetowy___Projekt_końcowy.Areas.Identity.Data;
+
 
 namespace Sklep_internetowy___Projekt_końcowy.Controllers
 {
     public class ProduktsController : Controller
     {
-        private readonly ProduktyDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public ProduktsController(ProduktyDbContext context)
+        public ProduktsController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -44,6 +46,7 @@ namespace Sklep_internetowy___Projekt_końcowy.Controllers
         }
 
         // GET: Produkts/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -66,6 +69,7 @@ namespace Sklep_internetowy___Projekt_końcowy.Controllers
         }
 
         // GET: Produkts/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -117,6 +121,7 @@ namespace Sklep_internetowy___Projekt_końcowy.Controllers
         }
 
         // GET: Produkts/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
